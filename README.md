@@ -309,8 +309,14 @@ The radar system operates through a coordinated sequence of actions:
 
 **Distance Calculation:**
 ```
-Distance (cm) = (Echo_Time × 343 m/s × 100 cm/m) / 2
-              = Echo_Time × 0.01715 cm/µs
+Distance (cm) = (Echo_Time_µs × Speed_of_Sound) / 2
+              = Echo_Time_µs / 58.0
+              
+OR alternatively:
+Distance (cm) = Echo_Time_µs × 0.034 / 2
+              = Echo_Time_µs / 29.1  (for one-way distance)
+
+Where Speed of Sound ≈ 343 m/s at 20°C
 ```
 
 **Coordinate Conversion:**
@@ -530,7 +536,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Contact and Support
 
 - **Issues:** Report bugs or request features via [GitHub Issues](https://github.com/anilkumar5678/Real-Time-Object-Detection-Radar/issues)
-- **Discussions:** Join conversations in [GitHub Discussions](https://github.com/anilkumar5678/Real-Time-Object-Detection-Radar/discussions)
 - **Email:** dhulipallaanil5191@gmail.com
 
 ## ⭐ Show Your Support
@@ -547,6 +552,6 @@ If you found this project helpful, please consider:
 
 **Made with ❤️ for robotics enthusiasts**
 
-[Report Bug](https://github.com/anilkumar5678/Real-Time-Object-Detection-Radar/issues) · [Request Feature](https://github.com/anilkumar5678/Real-Time-Object-Detection-Radar/issues) · [Documentation](https://github.com/anilkumar5678/Real-Time-Object-Detection-Radar/wiki)
+[Report Bug](https://github.com/anilkumar5678/Real-Time-Object-Detection-Radar/issues) · [Request Feature](https://github.com/anilkumar5678/Real-Time-Object-Detection-Radar/issues)
 
 </div>
